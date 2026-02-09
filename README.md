@@ -56,8 +56,8 @@ The architecture is intentionally designed to simulate real-world enterprise pip
 ## 📂 Project Structure
 
 email-sentiment-agent/
-│
-├── src/
+- │
+- ├── src/
 │ ├── init.py
 │ ├── agent_loop.py # Long-running batch agent
 │ ├── pipeline.py # Core sentiment pipeline logic
