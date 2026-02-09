@@ -2,6 +2,9 @@
 # Data
 # --------------------
 data/
+data/inbox/*
+outputs/processed/*
+outputs/processed_files.txt
 *.csv
 
 # --------------------
@@ -22,6 +25,9 @@ results/
 # --------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.env
 
 # --------------------
 # Notebooks
@@ -32,3 +38,5 @@ __pycache__/
 # OS
 # --------------------
 .DS_Store
+Thumbs.db
+
