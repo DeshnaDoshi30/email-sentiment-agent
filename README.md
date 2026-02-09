@@ -54,25 +54,24 @@ The architecture is intentionally designed to simulate real-world enterprise pip
 ---
 
 ## 📂 Project Structure
-
 email-sentiment-agent/
-- │
-- ├── src/
-│ ├── init.py
-│ ├── agent_loop.py # Long-running batch agent
-│ ├── pipeline.py # Core sentiment pipeline logic
-│ ├── predict.py # Model loading & inference
-│ ├── preprocess.py # Text cleaning utilities
-│ ├── config.py # Central configuration
-│ └── storage.py # File I/O helpers
+│
+├── src/
+│   ├── __init__.py
+│   ├── agent_loop.py        # Long-running batch processing agent
+│   ├── pipeline.py          # Core sentiment analysis pipeline
+│   ├── predict.py           # Model loading & inference logic
+│   ├── preprocess.py        # Text cleaning & preprocessing utilities
+│   ├── config.py            # Centralized configuration
+│   └── storage.py           # File I/O helpers (Excel read/write)
 │
 ├── data/
-│ └── inbox/ # Incoming email batches
+│   └── inbox/               # Incoming email batches (.xlsx)
 │
 ├── outputs/
-│ └── processed/ # Processed results
+│   └── processed/           # Processed predictions & results
 │
-├── models/ # Trained model (ignored in git)
+├── models/                  # Trained model files (gitignored)
 │
 ├── requirements.txt
 ├── README.md
